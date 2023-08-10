@@ -14,7 +14,7 @@ app.Map("/{**any}", async context =>
     
     Console.WriteLine(Encoding.UTF8.GetString(bytes));
     
-    Console.WriteLine(JsonSerializer.Serialize(context.Request.Form, new JsonSerializerOptions{WriteIndented = true}));
+    // Console.WriteLine(JsonSerializer.Serialize(context.Request.Form, new JsonSerializerOptions{WriteIndented = true}));
 });
 
 app.Run();
